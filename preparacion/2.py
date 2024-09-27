@@ -1,11 +1,11 @@
-def entradaValdida (entrada:str):
+def entrada_valdida (entrada:str):
     if len(entrada) < 20:
         return True
 
 def inicio():
     expresion = input('Ingrese una expresion matematica: ')
 
-    if not entradaValdida(expresion):
+    if not entrada_valdida(expresion):
         print('LA EXPRESION ES DEMASIADO LARGA')
 
     try:

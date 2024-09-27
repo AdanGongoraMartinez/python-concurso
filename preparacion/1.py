@@ -7,7 +7,7 @@ def ganador (espino: int, karel: int):
     else:
         return 'EMPATE'
 
-def limiteValido (variable:int):
+def limite_valido (variable:int):
     if 0 <= variable <=100:
         return True
 
@@ -20,7 +20,7 @@ def iniciar():
         print('ESPINO DEBE SER ENTERO')
         return 0
 
-    if not limiteValido(espino):
+    if not limite_valido(espino):
         print('ESPINO NO ESTÁ DENTRO DEL LÍMITE')
         return 0
 
@@ -30,7 +30,7 @@ def iniciar():
         print('ESPINO DEBE SER ENTERO')
         return 0
 
-    if not limiteValido(karel):
+    if not limite_valido(karel):
         print('KAREL NO ESTÁ DENTRO DEL LÍMITE')
         return 0
 

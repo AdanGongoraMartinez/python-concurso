@@ -6,6 +6,7 @@ def string_to_unique_array(s):
             unique_chars.append(char.upper())
     return unique_chars
 
+
 def evaluate(leters, word):
     validated_chars = []
     for char in word:
@@ -15,11 +16,13 @@ def evaluate(leters, word):
         return 'WIN'
     return 'LOSE'
 
+
 def read_values():
     leters = input('Ingrese las letras a evaluar: ')
     word = input('Ingrese la palabra a evaluar: ')
 
     return leters, word
+
 
 def start():
     times = int(input('Ingrese la cantidad de casos a evaluar: '))
